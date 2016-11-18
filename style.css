@@ -1,3 +1,52 @@
+@font-face {
+    font-family: "Hagin";
+    src: url(fonts/HaginCapsMedium.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Hagin Thin";
+    src: url(fonts/HaginCapsThin.otf);
+}
+
 body {
-  background-image: url(images/img_5.jpg);
+    background-image: url(images/img_5.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    font-family: "Hagin";
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.quotes {
+    margin: 40px;
+    padding: 20px;
+}
+
+#quote {
+    font-family: "Hagin";
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+}
+
+#author {
+    font-family: "Hagin Thin";
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+}
+
+.btn {
+    font-family: monospace;
+    font-weight: bold;
 }
