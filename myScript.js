@@ -3,7 +3,7 @@ $(document).ready(function() {
     var author;
 
     function getQuote() {
-        $.getJSON('quotes.json', function(data) {
+        $.getJSON(quotes.json, function(data) {
             /*randomNum = Math.floor((Math.random() * data.quotes.length));
             randomQuote = data.quotes[randomNum];
             randomAuthor = data.authors[randomNum];
