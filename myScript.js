@@ -4,12 +4,12 @@ $(document).ready(function() {
 
     function getQuote() {
         $.getJSON('quotes.json', function(data) {
-            randomNum = Math.floor((Math.random() * data.quotes.length));
+            /*randomNum = Math.floor((Math.random() * data.quotes.length));
             randomQuote = data.quotes[randomNum];
             randomAuthor = data.authors[randomNum];
             $(".quote").text(randomQuote);
-            $(".author").text(randomAuthor);
-            console.log(data.quotes[0]);
+            $(".author").text(randomAuthor);*/
+            console.log(data);
         });
     }
     getQuote();
