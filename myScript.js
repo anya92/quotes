@@ -3,30 +3,13 @@ $(document).ready(function() {
     var author;
 
     function getQuote() {
-        $.ajax({
-            url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=famous',
-            type: 'POST',
-            data: {},
-            dataType: 'json',
-            success: function(response) {
-                quote = response.quote;
-                author = response.author;
-                $("#quote").text(quote);
-                if (author) {
-                    $("#author").text("- " + author);
-                } else {
-                    $('#author').text('- unknown');
-                }
-                var text = quote + ' - ' + author;
-                $('.twitter').attr('href', "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text));
-            },
-            error: function(err) {
-                alert(err);
-            },
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader("X-Mashape-Authorization", "7gJkAqfrmwmshnurHj5r6g8fXuUkp1E5TapjsnCC3Ndy7fFFju");
-            }
-
+        $.getJSON('quotes.json', function(data) {
+            randomNum = Math.floor((Math.random() * data.quotes.length));
+            randomQuote = data.quotes[randomNum];
+            randomAuthor = data.authors[randomNum];
+            $(".quote").text(randomQuote);
+            $(".author").text(randomAuthor);
+            console.log(data.quotes[0]);
         });
     }
     getQuote();
