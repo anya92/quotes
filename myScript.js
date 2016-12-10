@@ -1,10 +1,11 @@
 $(document).ready(function() {
-    var quote;
-    var author;
+    var randomNum;
+    var randomQuote;
+    var randomAuthor;
     var url = 'quotes.json';
     function getQuote() {
         $.getJSON(url, function(data) {
-            /*randomNum = Math.floor((Math.random() * data.quotes.length));
+            randomNum = Math.floor((Math.random() * data.quotes.length));
             randomQuote = data.quotes[randomNum];
             randomAuthor = data.authors[randomNum];
             $(".quote").text(randomQuote);
