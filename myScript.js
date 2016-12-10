@@ -9,7 +9,7 @@ $(document).ready(function() {
             randomQuote = data.quotes[randomNum];
             randomAuthor = data.authors[randomNum];
             $(".quote").text(randomQuote);
-            $(".author").text(randomAuthor);*/
+            $(".author").text(randomAuthor);
             console.log(data);
         });
     }
