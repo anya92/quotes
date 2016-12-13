@@ -1,29 +1,25 @@
 @font-face {
-    font-family: "Hagin";
-    src: url(fonts/HaginCapsMedium.otf);
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "Hagin Thin";
-    src: url(fonts/HaginCapsThin.otf);
+    font-family: "Cutepunk";
+    src: url(fonts/CutepunkRegular.otf);
 }
 
 body {
-    background-image: url(images/img_5.jpg);
+    background-image: url(images/background.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 
 .title {
-    font-family: "Hagin";
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 100px;
+    font-family: "Cutepunk";
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 .quotes {
@@ -32,21 +28,21 @@ h1 {
 }
 
 #quote {
-    font-family: "Hagin";
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 1px 1px white;
+    padding: 15px;
+    border-radius: 15px 50px 30px;
+    font-family: monospace;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.57);
 }
 
 #author {
-    font-family: "Hagin Thin";
-    font-size: 25px;
-    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
     font-style: italic;
     text-align: right;
 }
-
 .btn {
     font-family: monospace;
     font-weight: bold;
+    margin-bottom: 20px;
 }

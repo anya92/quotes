@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Quote Machine</title>
-    <!--CSS files-->
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -16,14 +14,15 @@
     <div class="container">
         <!--Title-->
         <div class="row title text-center">
-            <div class="col-md-12 ">
-                <h1>Random Quote <br>Machine</h1>
-                <i class="fa fa-star-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i>
+            <div class="col-md-12 col-xs-12">
+                <h1>Random Quote Machine</h1>
+                <!--<h2>Cytaty są lepsze niż argumenty.</h2>-->
+                <!--linia oddzielająca-->
             </div>
         </div>
         <!--Quotes-->
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 ">
+            <div class="col-md-8 col-md-offset-2 col-xs-12">
                 <div class="quotes text-center">
                     <p id="quote"></p>
                     <p id="author"></p>
@@ -34,8 +33,8 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 ">
                 <ul class="list-inline text-center">
-                    <li><a href="#" class="btn btn-default btn-md get_quote" id="newQuote"><i class="fa fa-quote-right"></i> Next Quote</a></li>
-                    <li><a class="btn btn-default twitter" data-size="large"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
+                    <li><a href="#" class="btn btn-default btn-md get_quote" id="newQuote"><i class="fa fa-quote-right"></i> Następny</a></li>
+                    <li><a class="btn btn-default twitter" data-size="large"><i class="fa fa-twitter" aria-hidden="true"></i> Udostępnij</a>
                         <script>
                             ! function(d, s, id) {
                                 var js, fjs = d.getElementsByTagName(s)[0],
@@ -54,11 +53,8 @@
         </div>
 
     </div>
-
-
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-
 </body>
 
 </html>
