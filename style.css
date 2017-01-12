@@ -12,7 +12,7 @@ body {
 }
 
 .title {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 h1 {
@@ -23,8 +23,9 @@ h1 {
 }
 
 .quotes {
-    margin-top: 40px;
-    margin-bottom: 30px;
+    min-height: 350px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     padding: 20px;
 }
 
@@ -42,8 +43,17 @@ h1 {
     font-style: italic;
     text-align: right;
 }
+
 .btn {
     font-family: monospace;
     font-weight: bold;
     margin-bottom: 20px;
+}
+footer {
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+a {
+    color: black;
+    font-weight: bold;
 }
